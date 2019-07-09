@@ -6,6 +6,7 @@
 
 body{
     background: linear-gradient(to right,#504CF2 ,#99DCF2); 
+    overflow: hidden; 
 }
 
 nav{
