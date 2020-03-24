@@ -27,4 +27,51 @@ const navSlide = () =>{
 
 navSlide(); 
 
- 
+
+//Sections Movement
+
+$("#services").click(function() {
+
+    $("#s_servicios").velocity({ translateX: "100vw" }, { duration: 2000, visibility: "visible" }, "ease-in-out");
+    $("#s_exploraiones").velocity({ translateY: "-100vh" }, { duration: 2000, visibility: "hidden" }, [100, 80]);
+    $("#s_tienda").velocity({ translateY: "100vh" }, { duration: 2000, visibility: "hidden" }, [100, 80]);
+    $("#s_contacto").velocity({ translateX: "100vw" }, { duration: 2000, visibility: "hidden" }, [100, 80]);
+});
+
+
+$("#home").click(function() {
+
+    $("#s_servicios").velocity({ translateX: "-100vw" }, { duration: 2000, visibility: "visible" }, [100, 80]);
+    $("#s_exploraiones").velocity({ translateY: "-100vh" }, { duration: 2000, visibility: "hidden" }, [100, 80]);
+    $("#s_tienda").velocity({ translateY: "100vh" }, { duration: 2000, visibility: "hidden" }, [100, 80]);
+    $("#s_contacto").velocity({ translateX: "100vw" }, { duration: 2000, visibility: "hidden" }, [100, 80]);
+});
+
+$("#exploraciones").click(function() {
+
+    $("#s_exploraiones").velocity({ translateY: "100vh" }, { duration: 2000, visibility: "Visible" }, [100, 80]);
+    $("#s_servicios").velocity({ translateX: "-100vw" }, { duration: 2000, visibility: "hidden" }, [100, 80]);
+    $("#s_tienda").velocity({ translateY: "100vh" }, { duration: 2000, visibility: "hidden" }, [100, 80]);
+    $("#s_contacto").velocity({ translateX: "100vw" }, { duration: 2000, visibility: "hidden" }, [100, 80]);
+});
+
+
+$("#tienda").click(function() {
+
+    $("#s_tienda").velocity({ translateY: "-100vh" }, { duration: 2000, visibility: "visible" }, [100, 80]);
+    $("#s_exploraiones").velocity({ translateY: "-100vh" }, { duration: 2000, visibility: "hidden" }, [100, 80]);
+    $("#s_servicios").velocity({ translateX: "-100vw" }, { duration: 2000, visibility: "hidden" }, [100, 80]);
+    $("#s_contacto").velocity({ translateX: "100vw" }, { duration: 2000, visibility: "hidden" }, [100, 80]);
+
+
+});
+
+$("#contacto").click(function() {
+
+    $("#s_contacto").velocity({ translateX: "-100vw" }, { duration: 2000, visibility: "visible" }, [100, 80]);
+    $("#s_tienda").velocity({ translateY: "100vh" }, { duration: 2000, visibility: "hidden" }, [100, 80]);
+    $("#s_exploraiones").velocity({ translateY: "-100vh" }, { duration: 2000, visibility: "hidden" }, [100, 80]);
+    $("#s_servicios").velocity({ translateX: "-100vw" }, { duration: 2000, visibility: "hidden" }, [100, 80]);
+
+
+});
