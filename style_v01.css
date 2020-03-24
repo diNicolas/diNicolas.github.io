@@ -5,8 +5,10 @@
 }
 
 body{
-    background: linear-gradient(to right,#504CF2 ,#99DCF2); 
-    overflow: hidden; 
+    background:linear-gradient(to right,rgb(253, 232, 173) ,rgb(129, 219, 189)); 
+    overflow: hidden;
+    margin: 0;
+    /*overflow: hidden;*/ 
 }
 
 nav{
@@ -14,10 +16,11 @@ nav{
     justify-content: space-around; 
     align-items: center; 
     min-height: 8vh;
-    background: none;  
-    
+    background: none; 
 
 }
+
+
 
 .logo, div{
     justify-content: flex-start; 
@@ -28,6 +31,7 @@ nav{
     width: 50px; 
     height: 50px;
     text-align: center; 
+    
 }
 
 .nav-links{
@@ -68,6 +72,70 @@ nav{
     transition: all 0.3s ease; 
 }
 
+
+
+/*SECCIONES  ---------------------------------*/
+
+#s_servicios { 
+    position:absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+    left: -100%;
+    visibility: hidden;
+    z-index:-1;
+    bottom: 0px;
+}
+
+#s_contacto { 
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    right: -100%;
+    visibility: hidden;
+    z-index:-1;
+    bottom: 0px;
+}
+
+#s_tienda { 
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%); 
+    bottom: -100%;
+    visibility: hidden;
+    z-index:-1;
+    
+}
+
+
+
+#s_exploraiones {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+    position: absolute;
+    top: -100%;
+    visibility: hidden;
+    z-index:-1;
+}
+
+.items {
+    font-family: 'Lato', sans-serif;
+    margin-top: 50vh; 
+    letter-spacing: 3px;
+    font-weight: lighter;  
+    font-size: 50px; 
+    text-align: center;
+    color: rgba(226, 226, 226);  
+    
+}
+
+
+/*-----------------------------------------*/
+
+
 /*Responsive--------------------------------------*/
 
 @media screen and (max-width:1024px){
@@ -84,16 +152,16 @@ nav{
     .nav-links{
         position: absolute; 
         right: 0px; 
-        height: 92vh; 
+        height: 62vh; 
         top: 8vh; 
         background-color:rgba(77, 72, 72, 0.212); 
         display: flex; 
         flex-direction: column;
         align-items: center; 
         width: 35%; 
-       transform: translateX(100%);
-       transition: transform 0.5s ease-in; 
-       border-radius: 5px; 
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in; 
+        border-radius: 5px; 
 
     }
 
