@@ -9,16 +9,19 @@
     <title>ninacaspi</title>
 </head>
 <body>
+    <!--FIXED NAV-->
     <nav>
-        <div class="logo">
-           <img class="logo" src="img/logoWhite.png" alt="">
+        <div class="logo" id="home">
+           <a href="#"><img class="logo" src="img/logoWhite.png" alt=""></a>
         </div>
         <ul class="nav-links">
-            <li><a href=""><i class="fas fa-seedling fa-4x"></i><p>servicios</p></a></li>
-            <li><a href=""><i class="fas fa-paint-brush fa-4x"></i><p>exploraciones</p></a></li>
-            <li><a href=""> <i class="fas fa-shopping-bag fa-4x"></i> <p>tienda</p></a></li>
-            <li><a href=""><i class="fas fa-paper-plane fa-4x"></i><p>contacto</p></a></li>
+            <li><a href="#"><i class="fas fa-seedling fa-4x" id="services"></i><p>servicios</p></a></li>
+            <li><a href="#"><i class="fas fa-paint-brush fa-4x" id="exploraciones"></i><p>exploraciones</p></a></li>
+            <li><a href="#"> <i class="fas fa-shopping-bag fa-4x" id="tienda"></i> <p>tienda</p></a></li>
+            <li><a href="#"><i class="fas fa-paper-plane fa-4x" id="contacto"></i><p>contacto</p></a></li>
+            
 
+           
         </ul>
 
         <div class="burger">
@@ -28,7 +31,38 @@
         </div>
         
     </nav>
+
+    <!--Sections---------------->
+
+    <div id="s_servicios">
+       <p class="items">Servicios</p> 
+
+    </div>
+
+
+
+    <div id="s_exploraiones">
+        <p class="items">Exploraciones</p> 
+
+    </div>
+
+    
+    <div id="s_tienda">
+        <p class="items">Tienda</p> 
+
+    </div>
+
+    <div id="s_contacto">
+        <p class="items">Contacto</p> 
+
+    </div>
+
+    <!--end Sections---------------->
+
     <script src="https://kit.fontawesome.com/df51d3d9d7.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2/velocity.ui.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
